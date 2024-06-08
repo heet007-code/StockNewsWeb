@@ -11,8 +11,8 @@ app.use(express.static('public'));
 
 // Endpoint to fetch stock market news
 app.get('/getStockNews', async (req, res) => {
-    const apiKey = '31ac672c40da4e728ea5e99adb8ea9d1'; // Replace this with your actual NewsAPI key
-    const url = `https://newsapi.org/v2/everything?q=stock%20market&apiKey=${apiKey}`;
+    const apiKey = 'API_KEY'; // Replace this with your actual NewsAPI key
+    const url = `API_URL=${apiKey}`;
 
     try {
         const response = await axios.get(url);
